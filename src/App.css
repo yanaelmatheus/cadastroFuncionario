@@ -36,3 +36,206 @@
     transform: rotate(360deg);
   }
 }
+
+/*.container-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+select{
+  background-color: #4caf50;
+  color: white;
+  padding: 10px, 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}*/
+
+.form-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.conteudo-form{
+  width: 300px;
+  background-color: #5c5c5c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-form div{
+  margin-bottom: 15px;
+}
+
+.conteudo-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.conteudo-form input[type="text"],
+.conteudo-form input[type="date"],
+.conteudo-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.conteudo-form button[type="submit"]:hover{
+  background-color: aqua;
+}
+
+.containerPadrao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajuste a altura conforme necessário */
+  background-color: #282c34; /* Cor de fundo opcional */
+}
+
+.containerPadraoDividido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 5vh; /* Ajuste a altura conforme necessário */
+  background-color: #282c34; /* Cor de fundo opcional */
+}
+
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.button-title {
+  font-size: 1.5em; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Torna o texto negrito */
+  color: #333; /* Cor do texto, pode ser ajustada conforme a paleta de cores */
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Transforma o texto em maiúsculas para destaque */
+  letter-spacing: 1px; /* Adiciona um espaçamento entre letras */
+  background: linear-gradient(90deg, #ff8c00, #ff6347); /* Gradiente de fundo opcional */
+  -webkit-background-clip: text; /* Faz o gradiente aparecer apenas no texto */
+  color: transparent; /* Torna o texto transparente para que o gradiente apareça */
+  padding: 5px; /* Adiciona um pequeno padding ao redor do texto */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao redor do texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.welcome {
+  font-size: 1.5em; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Torna o texto negrito */
+  background: linear-gradient(90deg, #ff8c00, #ff6347); /* Gradiente de fundo opcional */
+  -webkit-background-clip: text; /* Faz o gradiente aparecer apenas no texto */
+  color: transparent; /* Torna o texto transparente para que o gradiente apareça */
+  margin-right: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff; /* Cor de fundo do botão */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.button:focus {
+  outline: none; /* Remove o contorno ao focar */
+}
+
+.button-link {
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.divs-internas{
+  background-color: #5c5c5c;
+}
+
+.containerGrids{
+  height: 100%;
+  width: 100%; 
+  background-Color: #5c5c5c;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.div-Grid{
+  height: 100%;
+  width: 100%;
+
+}
+
+.header {
+  position: fixed; /* Fixa o cabeçalho no topo da página */
+  top: 0; /* Alinha o cabeçalho ao topo da tela */
+  right: 0; /* Alinha o cabeçalho à direita da tela */
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo ao final (direita) */
+  padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+  width: 100%; /* Largura total da tela */
+  
+  z-index: 1000; /* Garante que o cabeçalho fique sobre outros conteúdos */
+}
+
+.auth-container {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+}
+
+.user-info {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o texto e o botão */
+}
+
+.auth-button {
+  padding: 8px 16px; /* Espaçamento interno do botão */
+  font-size: 14px; /* Tamanho da fonte do botão */
+  color: #fff; /* Cor do texto do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  border: none; /* Remove bordas padrão */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor como uma mãozinha */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.auth-button:hover {
+  background-color: #0056b3; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+.auth-button:active {
+  background-color: #004494; /* Cor de fundo quando o botão é pressionado */
+}
